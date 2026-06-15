@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap');
 :root{--ink:#0B0B16;--bg:#070D20;--surface:#0F1A36;--surface2:#0A1228;--muted:#9AA6C0;--border:rgba(255,255,255,.12);--accent:#7FB4FF;}
 *{margin:0;padding:0;box-sizing:border-box;}
-body{width:1200px;background:var(--bg);color:#E7ECF6;font-family:'Archivo',sans-serif;font-size:18px;line-height:1.65;}
+body{width:100%;min-width:0;overflow-x:hidden;background:var(--bg);color:#E7ECF6;font-family:'Archivo',sans-serif;font-size:18px;line-height:1.65;}
 .inner{max-width:1100px;margin:0 auto;padding:0 24px;}
 h1,h2,h3{font-family:'Archivo',sans-serif;font-weight:700;letter-spacing:-0.015em;line-height:1.14;color:#F3F6FC;}
 .mono{font-variant-numeric:tabular-nums;}
@@ -105,7 +105,39 @@ a{color:inherit;}
 .dir-sel option{background:#0F1A36;color:#E7ECF6;}
 .dir-count{color:#9AA6C0;margin:20px 0 14px;font-size:13px;letter-spacing:.04em;}
 .no-res{color:#9AA6C0;padding:28px 0;}
-</style></head><body><section class="role" id="business-intelligence">
+</style><style>/* ===== RESPONSIVE — tablet + mobile ===== */
+@media (max-width:860px){
+  .head{padding:72px 0 150px;}
+  .head h1{font-size:38px;}
+  .head p{font-size:18px;}
+  .role-head{padding:48px 0 36px;}
+  .role-head h2{font-size:30px;}
+  .meta-row{gap:14px 20px;}
+  .body-grid{grid-template-columns:1fr;gap:40px;padding:48px 0;}
+  .content h3.sec{font-size:22px;margin:32px 0 12px;}
+  .facts{padding:24px 22px;}
+  .board{padding:64px 0 32px;}
+  .board h2{font-size:28px;}
+  .process{padding:64px 0;}
+  .process h2{font-size:26px;}
+  .steps{grid-template-columns:1fr 1fr;}
+  .step{height:auto;}
+  .dir-selects{grid-template-columns:1fr 1fr;}
+  .apply{padding:48px 0 64px;}
+  .apply h3.sec{font-size:24px;}
+  .form-card{padding:28px 24px;}
+  .frow{grid-template-columns:1fr;}
+}
+@media (max-width:480px){
+  .inner{padding:0 18px;}
+  .head{padding:64px 0 120px;}
+  .head h1{font-size:29px;}
+  .role-head h2{font-size:24px;}
+  .meta-row{gap:8px 16px;font-size:14.5px;}
+  .steps{grid-template-columns:1fr;}
+  .dir-selects{grid-template-columns:1fr;}
+  .brand img{margin-bottom:32px;}
+}</style></head><body><section class="role" id="business-intelligence">
   <div class="role-head"><div class="inner">
     <a class="backlink" href="roles.html">↑ All roles</a>
     <h2>Business Intelligence Intern</h2>
